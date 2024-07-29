@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Color changer</title>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="min-w-96">
+    <div class="flex flex-col items-center space-y-6">
+        <h1 class="font-bold text-black text-2xl py-9">Color Changer</h1>
+        <p id="color-box"
+            class="w-60 h-60 bg-black text-white shadow-slate-800 shadow-lg font-bold text-center pt-24 mt-20">Color box
+            </h1>
+
+        <div class="space-x-6">
+            <button id="change-color-btn" class="px-4 py-2 text-white font-semibold bg-blue-900 rounded">change
+                color</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
